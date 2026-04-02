@@ -1533,7 +1533,7 @@ p {
 
   /* Move choir menu cards to the top of the picture block (desktop) */
   .page-accueil .line-carres {
-    margin-top: -760px;
+    margin-top: -620px;
     background: transparent;
     position: relative;
     z-index: 9;
