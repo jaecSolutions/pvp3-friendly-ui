@@ -1523,14 +1523,8 @@ p {
   background: linear-gradient(130deg, #1eb1b3 0%, #177d92 100%);
 }
 
-/* Keep the 5 visible choir cards on one line on desktop */
+/* Desktop placement for choir menu cards */
 @media (min-width: 992px) {
-  .page-accueil .line-carres .carres-couleurs {
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-    max-width: 1160px;
-    gap: 1rem;
-  }
-
   /* Move choir menu cards to the top of the picture block (desktop) */
   .page-accueil .line-carres {
     margin-top: -560px;
