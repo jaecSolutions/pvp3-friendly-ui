@@ -1523,6 +1523,15 @@ p {
   background: linear-gradient(130deg, #1eb1b3 0%, #177d92 100%);
 }
 
+/* Keep the 5 visible choir cards on one line on desktop */
+@media (min-width: 992px) {
+  .page-accueil .line-carres .carres-couleurs {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    max-width: 1160px;
+    gap: 1rem;
+  }
+}
+
 .line-nouvelle .container {
   border-radius: var(--refresh-radius);
   background: rgba(255, 255, 255, 0.86);
