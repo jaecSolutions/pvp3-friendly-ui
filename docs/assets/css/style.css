@@ -701,7 +701,6 @@ section {
 }
 
 .footer-brand .footer-logo {
-  filter: brightness(0) invert(1);
   height: 44px;
   margin-bottom: 1rem;
 }
