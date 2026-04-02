@@ -1,0 +1,838 @@
+@charset "UTF-8";
+@import url("../../../../../../../fonts.googleapis.com/css4aa6.css?family=Fredoka+One");
+@import url("../../../../../../../fonts.googleapis.com/csseea3.css?family=Sarabun:100,200,300,400,500,600,700,800");
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: normal;
+  font-style: normal; }
+
+ol, ul {
+  list-style-position: inside; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Must reside at top */
+.uppercase {
+  text-transform: uppercase; }
+
+/*
+* UI Typographie
+*/
+html {
+  font-size: 55.5%; }
+  @media (min-width: 992px) {
+    html {
+      font-size: 58.5%; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 62.5%; } }
+
+h1,
+.h1 {
+  font-family: "Fredoka One", cursive;
+  line-height: 5.1rem;
+  font-size: 4.5rem;
+  color: #fc9f32;
+  margin-bottom: 4.9rem;
+  font-weight: normal; }
+
+h2,
+.h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.5rem;
+  line-height: 4.6rem;
+  color: #fc9f32;
+  margin-bottom: 3.1rem;
+  font-weight: normal; }
+
+h3,
+.h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5rem;
+  color: #13a3df;
+  margin-bottom: 3.0rem;
+  font-weight: normal; }
+
+h4,
+.h4 {
+  font-family: "Fredoka One", cursive;
+  line-height: 3.2rem;
+  font-size: 1.9rem;
+  color: #13a3df;
+  margin-bottom: 3.2rem;
+  font-weight: normal; }
+
+h5,
+.h5 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 800;
+  font-size: 2.0rem;
+  line-height: 2.2rem;
+  color: #13a3df;
+  margin-bottom: 2.7rem; }
+
+h6,
+.h6 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 800;
+  line-height: 0.5rem;
+  font-size: 1.9rem;
+  color: #13a3df;
+  margin-bottom: 2.3rem; }
+
+ul,
+li,
+span {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: #242020; }
+  ul a,
+  li a,
+  span a {
+    letter-spacing: 0.02em; }
+
+p {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: #242020;
+  margin-bottom: 3.0rem; }
+  p a {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    color: #fc9f32;
+    cursor: pointer; }
+    p a:hover {
+      color: #13a3df; }
+
+/*
+style global pour les textes
+en caractères gras
+*/
+strong {
+  font-weight: 800; }
+
+body {
+  background-color: #ffffff; }
+  @media (max-width: 991px) {
+    body .container {
+      width: 100%; } }
+  body img.e-thumbnail,
+  body .news-thumbnail {
+    border-radius: 7px; }
+  body hr {
+    display: none; }
+  body .jumbotron.event-jumbotron__top {
+    background-color: #fc9f32;
+    border-radius: 7px; }
+    body .jumbotron.event-jumbotron__top h1,
+    body .jumbotron.event-jumbotron__top p {
+      color: #ffffff; }
+    body .jumbotron.event-jumbotron__top .event-jumbotron__contact-wrapper h3,
+    body .jumbotron.event-jumbotron__top .event-jumbotron__contact-wrapper p,
+    body .jumbotron.event-jumbotron__top .event-jumbotron__contact-wrapper span {
+      color: #ffffff; }
+
+.line-intro {
+  background-color: #dadada;
+  margin-top: -3rem; }
+  .line-intro .row-fluid.row {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 7px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    padding: 5rem 1rem; }
+    @media (max-width: 767px) {
+      .line-intro .row-fluid.row {
+        flex-direction: column; } }
+    .line-intro .row-fluid.row p,
+    .line-intro .row-fluid.row span {
+      color: #fc9f32;
+      font-weight: bold; }
+    .line-intro .row-fluid.row h1 {
+      margin: 0;
+      border-right: 3px solid #fc9f32;
+      margin-right: 1.2rem; }
+      @media (max-width: 767px) {
+        .line-intro .row-fluid.row h1 {
+          margin: 0 0 1rem 0;
+          border-right: none; } }
+
+.line-main {
+  background-color: #ffffff;
+  padding: 3rem 0; }
+
+.line-nouvelle {
+  background-color: #ffffff;
+  margin: 4rem; }
+  @media (max-width: 1199px) {
+    .line-nouvelle h2 {
+      font-size: 3.2rem; } }
+  @media (max-width: 991px) {
+    .line-nouvelle h2 {
+      font-size: 2.4rem; } }
+  @media (max-width: 767px) {
+    .line-nouvelle h2 {
+      font-size: 3rem; } }
+  .line-nouvelle .eventsList h2,
+  .line-nouvelle .eventsList h3,
+  .line-nouvelle .eventsList span.date.e-date,
+  .line-nouvelle .eventsList span.city {
+    font-family: "Fredoka One", cursive;
+    color: #fc9f32;
+    margin-bottom: 1rem; }
+  .line-nouvelle .eventsList span.date.e-date,
+  .line-nouvelle .eventsList span.city {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: normal;
+    letter-spacing: 0.1em; }
+  .line-nouvelle .eventsList p.itemInfos {
+    margin-bottom: 1rem; }
+  @media (max-width: 767px) {
+    .line-nouvelle .eventsList .btn-primary {
+      margin-bottom: 2rem; } }
+  .line-nouvelle .eventsList a.viewAll {
+    font-family: "Fredoka One", cursive;
+    color: #fc9f32;
+    position: relative;
+    top: 2rem; }
+    @media (max-width: 767px) {
+      .line-nouvelle .eventsList a.viewAll {
+        top: 0; } }
+    .line-nouvelle .eventsList a.viewAll:hover {
+      color: #13a3df; }
+  @media (max-width: 767px) {
+    .line-nouvelle .zone-news_flash {
+      margin-top: 4rem; } }
+  .line-nouvelle .zone-news_flash > .content .itemImage {
+    margin-bottom: 0; }
+  .line-nouvelle .zone-news_flash h2,
+  .line-nouvelle .zone-news_flash h3,
+  .line-nouvelle .zone-news_flash p.itemInfos {
+    font-family: "Fredoka One", cursive;
+    color: #13a3df; }
+  .line-nouvelle .zone-news_flash p.itemInfos.e-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: normal;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem; }
+  .line-nouvelle .zone-news_flash .btn-primary {
+    background-color: #13a3df; }
+    .line-nouvelle .zone-news_flash .btn-primary:hover {
+      background-color: #242020; }
+  .line-nouvelle .zone-news_flash a.viewAll {
+    font-family: "Fredoka One", cursive;
+    color: #13a3df;
+    position: relative;
+    top: 2rem; }
+    @media (max-width: 767px) {
+      .line-nouvelle .zone-news_flash a.viewAll {
+        top: 0; } }
+    .line-nouvelle .zone-news_flash a.viewAll:hover {
+      color: #fc9f32; }
+
+.page-inscription p.itemInfos.mod-eventflash__item-itemInfos span.city {
+  display: none; }
+
+.page-equipe .zone-article,
+.page-equipe .zone-image {
+  margin-top: 3rem; }
+
+.page-realisation img {
+  float: left;
+  margin-right: 2rem; }
+
+.page-accueil .line-banner .mod-banner__img {
+  position: relative;
+  z-index: 1;
+  top: -20px;
+  border-radius: 7px;
+  height: 613px;
+  margin-top: 0rem; }
+
+.line-banner {
+  background-color: #dadada; }
+  .line-banner .mod-banner__img {
+    position: relative;
+    z-index: 1;
+    top: -20px;
+    border-radius: 7px;
+    height: 413px;
+    margin-top: 2rem; }
+
+.line-carres {
+  background-color: #dadada; }
+  .line-carres .carres-couleurs {
+    display: flex;
+    justify-content: space-between;
+    margin: -130px 40px 0;
+    position: relative;
+    z-index: 6; }
+    @media (max-width: 767px) {
+      .line-carres .carres-couleurs {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -130px 0 0; } }
+    .line-carres .carres-couleurs .carre {
+      font-family: "Fredoka One", cursive;
+      height: 150px;
+      width: 150px;
+      border-radius: 7px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 2.5rem; }
+      .line-carres .carres-couleurs .carre a {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .line-carres .carres-couleurs .carre {
+          margin: 0 5px; } }
+      @media (max-width: 991px) {
+        .line-carres .carres-couleurs .carre {
+          margin: 0 5px;
+          padding: 1rem; } }
+      @media (max-width: 767px) {
+        .line-carres .carres-couleurs .carre {
+          margin-top: 5px; } }
+      .line-carres .carres-couleurs .carre:nth-child(1) {
+        background-color: #6017a1;display:none; }
+        .line-carres .carres-couleurs .carre:nth-child(1):hover {
+          background-color: #6d1ab7;
+          transition: 0.2s ease-in-out; }
+      .line-carres .carres-couleurs .carre:nth-child(2) {
+        background-color: #f12020; }
+        .line-carres .carres-couleurs .carre:nth-child(2):hover {
+          background-color: #f33838;
+          transition: 0.2s ease-in-out; }
+      .line-carres .carres-couleurs .carre:nth-child(3) {
+        background-color: #e9168c; }
+        .line-carres .carres-couleurs .carre:nth-child(3):hover {
+          background-color: #eb2d98;
+          transition: 0.2s ease-in-out; }
+      .line-carres .carres-couleurs .carre:nth-child(4) {
+        background-color: #fc9f32; }
+        .line-carres .carres-couleurs .carre:nth-child(4):hover {
+          background-color: #fcab4b;
+          transition: 0.2s ease-in-out; }
+      .line-carres .carres-couleurs .carre:nth-child(5) {
+        background-color: #51d865; }
+        .line-carres .carres-couleurs .carre:nth-child(5):hover {
+          background-color: #66dd77;
+          transition: 0.2s ease-in-out; }
+      .line-carres .carres-couleurs .carre:nth-child(6) {
+        background-color: #13a3df; }
+        .line-carres .carres-couleurs .carre:nth-child(6):hover {
+          background-color: #20b0ec;
+          transition: 0.2s ease-in-out; }
+  .line-carres .inscription-carre {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center; }
+
+/*
+* UI Button
+*/
+.btn {
+  font-family: "Fredoka One", cursive;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: none !important;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 7px;
+  border-width: 5px;
+  padding: 12px 30px;
+  min-width: 90px;
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.btn-primary {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  background-color: #fc9f32;
+  border-color: #242020;
+  margin-left: 0px;
+  text-transform: uppercase; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: #242020;
+    border-color: #242020; }
+
+.btn.btn-default {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  background-color: #13a3df;
+  border-color: #242020;
+  margin-left: 0px;
+  box-sizing: border-box;
+  text-transform: uppercase; }
+  .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active {
+    color: #FFFFFF;
+    background-color: #242020; }
+
+.btn-link {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  color: #fc9f32;
+  background-color: none;
+  border-color: none;
+  margin-left: 0px;
+  text-transform: uppercase;
+  text-shadow: none; }
+  .btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active {
+    color: #13a3df; }
+
+a#remove_organization_member {
+  margin-top: 2rem; }
+
+.form-horizontal .control-label {
+  font-family: "Fredoka One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.03em;
+  color: #13a3df; }
+
+.control-label--required {
+  color: #fc9f32; }
+
+.form-withProgress__wrapper {
+  border-radius: 7px; }
+
+.event-authentication-cpy-name {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.5rem;
+  line-height: 4.6rem;
+  color: #fc9f32;
+  margin-bottom: 3.1rem;
+  font-style: normal;
+  font-weight: normal; }
+
+.page-creer-compte table#identification_organization_result thead tr:first-child th:first-child a {
+  position: relative;
+  left: -8000px; }
+  .page-creer-compte table#identification_organization_result thead tr:first-child th:first-child a:after {
+    content: "Identifiant de la famille";
+    display: block;
+    position: absolute;
+    left: 8000px;
+    top: 0px;
+    z-index: 90;
+    width: 100%;
+    border: none; }
+
+.page-creer-compte table#identification_organization_result thead tr:first-child th:nth-child(2) a {
+  position: relative;
+  left: -8000px; }
+  .page-creer-compte table#identification_organization_result thead tr:first-child th:nth-child(2) a:after {
+    content: "Nom de la famille";
+    display: block;
+    position: absolute;
+    left: 8000px;
+    top: 0px;
+    z-index: 90;
+    width: 100%;
+    border: none; }
+
+.page-creer-compte table#identification_organization_result td a.ajax-select-organization {
+  position: relative;
+  left: -8000px; }
+  .page-creer-compte table#identification_organization_result td a.ajax-select-organization:after {
+    content: "Je m'inscris sous le nom de cette famille";
+    display: block;
+    position: absolute;
+    left: 8000px;
+    top: 0px;
+    z-index: 90;
+    width: 100%;
+    border: none; }
+
+.page-creer-compte .form-control-static {
+  word-break: break-all; }
+
+.page-creer-compte .alert.alert.alert-danger.error {
+  position: relative;
+  left: -8000px;
+  margin-bottom: 3.5rem; }
+  .page-creer-compte .alert.alert.alert-danger.error:after {
+    content: "Ce nom est associé au profil d’une autre famille. Veuillez choisir un autre nom ou ajouter un 2e nom de famille au premier, en les séparant par un tiret.";
+    display: block;
+    position: absolute;
+    left: 8000px;
+    top: 0px;
+    z-index: 90;
+    width: 100%;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(185, 74, 72, 0.2);
+    border-radius: 4px;
+    margin-bottom: 1rem; }
+
+.page-creer-compte #org-search-box .col-md-12:first-child .control-label {
+  position: relative;
+  left: -8000px; }
+  .page-creer-compte #org-search-box .col-md-12:first-child .control-label:after {
+    content: "Nom de votre famille";
+    display: block;
+    position: absolute;
+    left: 8018px;
+    top: 0px;
+    z-index: 90;
+    width: 100%; }
+
+.page-creer-compte #org-search-box .col-md-12:nth-child(2) {
+  display: none; }
+
+form#ParentFormulairedebase h2:first-of-type {
+  display: none; }
+
+form#ParentFormulairedebase #fieldset-section_97685 {
+  display: none; }
+
+form#ParentFormulairedebase div#section_footer {
+  margin-bottom: 3rem; }
+
+@media (max-width: 768px) {
+  .section-footer-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .section-footer-navigation .btn + .btn {
+      margin-left: 0px; } }
+
+.form-withProgress__wrapper .input-checkbox.col-md-12 {
+  width: 100%; }
+
+.line-menu {
+  background-color: #dadada;
+  margin-bottom: 3rem; }
+  .line-menu .row-fluid.row {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .line-menu .row-fluid.row {
+        flex-direction: column; } }
+  .line-menu ul.nav.navbar-nav li a {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.6rem;
+    letter-spacing: 0.0em;
+    color: #242020; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .line-menu ul.nav.navbar-nav li a {
+        font-size: 12px; } }
+    .line-menu ul.nav.navbar-nav li a:hover {
+      color: #13a3df; }
+  .line-menu ul.nav.navbar-nav ul.dropdown-menu li {
+    background-color: #13a3df; }
+    .line-menu ul.nav.navbar-nav ul.dropdown-menu li a {
+      background-color: #13a3df;
+      color: #FFFFFF;
+      letter-spacing: 0.10em; }
+      .line-menu ul.nav.navbar-nav ul.dropdown-menu li a:hover {
+        color: #9DD6EE; }
+
+@media (max-width: 991px) {
+  div#mainMenu {
+    overflow-x: hidden;
+    min-width: 350px; } }
+
+.cart-icon__icon {
+  color: #fc9f32; }
+
+/*
+* UI Accordeon
+*/
+.panel-default .panel-heading {
+  background-color: #FFFFFF;
+  color: #242020;
+  border: 3px solid #242020;
+  border-radius: 7px;
+  margin-bottom: 1.2rem; }
+  .panel-default .panel-heading a {
+    font-family: "Fredoka One", cursive;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: #242020; }
+    .panel-default .panel-heading a:hover {
+      color: #fc9f32; }
+
+.panel-default p.news-accordion-published-date {
+  font-family: "Fredoka One", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #242020;
+  margin-bottom: 0; }
+
+.nav-progress > li.disabled:before {
+  color: #FFFFFF;
+  background-color: #242020;
+  position: relative;
+  z-index: 2; }
+
+.nav-progress > li.disabled:after {
+  border-bottom: 4px solid #242020;
+  z-index: 1; }
+
+.nav-progress > li.disabled.active:before {
+  color: #FFFFFF;
+  background-color: #fc9f32; }
+
+.nav-progress > li.disabled.active:after {
+  border-bottom: 4px solid #B4C3C8;
+  z-index: 1; }
+
+.nav-progress > li.disabled.active ~ li:before {
+  color: #FFFFFF;
+  background-color: #B4C3C8; }
+
+.nav-progress > li.disabled.active ~ li:after {
+  border-bottom: 4px solid #B4C3C8;
+  z-index: 1; }
+
+.member-sidebar__inner {
+  border-radius: 7px;
+  background-color: #ffffff;
+  max-width: 270px; }
+  .member-sidebar__inner li a {
+    font-family: "Fredoka One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+    .member-sidebar__inner li a:hover {
+      color: #9DD6EE; }
+  .member-sidebar__inner li.active a {
+    color: #9DD6EE; }
+
+.member-sidebar__member-header {
+  border-bottom: none;
+  background-color: #13a3df;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; }
+  .member-sidebar__member-header .h3 {
+    margin-bottom: 0;
+    font-family: "Fredoka One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+
+.member-sidebar__menu {
+  background-color: #13a3df;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 1rem;
+  padding-top: 0; }
+
+.member-sidebar__member-footer {
+  text-align: center;
+  border-radius: 7px;
+  border: 5px solid black;
+  background-color: #fc9f32;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+  .member-sidebar__member-footer a {
+    font-family: "Fredoka One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+
+li.header-ext.header-ext-login a {
+  font-family: "Sarabun", sans-serif;
+  color: #fc9f32;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center; }
+  li.header-ext.header-ext-login a:hover {
+    color: #13a3df;
+    cursor: pointer; }
+  li.header-ext.header-ext-login a.member-login, li.header-ext.header-ext-login a.member-logout {
+    border-right: 2px solid #fc9f32;
+    border-left: 2px solid #fc9f32;
+    padding: 2px 20px; }
+
+li.header-ext.header-ext-login span.member-greeting {
+  font-family: "Sarabun", sans-serif;
+  color: #242020;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center; }
+
+li.header-ext.header-ext-custom,
+li.header-ext.header-ext-social-links {
+  float: left; }
+  li.header-ext.header-ext-custom a,
+  li.header-ext.header-ext-social-links a {
+    font-family: "Sarabun", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase; }
+  li.header-ext.header-ext-custom a,
+  li.header-ext.header-ext-custom .social-link [class*=icon-],
+  li.header-ext.header-ext-social-links a,
+  li.header-ext.header-ext-social-links .social-link [class*=icon-] {
+    color: #fc9f32; }
+
+.line-header .zone-25 .content {
+  margin-top: 10px; }
+
+.line-header .zone-25 a {
+  font-family: "Fredoka One", cursive;
+  color: #ffffff;
+  font-weight: normal;
+  position: relative;
+  padding: 1.4rem;
+  background-color: #fc9f32;
+  border-radius: 7px; }
+  @media (max-width: 767px) {
+    .line-header .zone-25 a {
+      margin-top: -40px;
+      float: right; } }
+
+@media (max-width: 767px) {
+  .mod-header .header-ext + .header-ext {
+    margin-left: 0; } }
+
+.line-footer {
+  margin-top: 6rem;
+  padding: 5rem 0;
+  background-color: #242020; }
+  @media (max-width: 767px) {
+    .line-footer {
+      text-align: center; } }
+  .line-footer .col-md-12 {
+    width: 100%; }
+    @media (max-width: 767px) {
+      .line-footer .col-md-12 {
+        width: 80%;
+        margin: 0 auto; } }
+  .line-footer label.control-label.col-md-6.required {
+    margin-bottom: 1rem;
+    color: #ffffff; }
+  .line-footer input[type="checkbox"] {
+    margin: 8px 0 0 -20px; }
+  .line-footer span.required {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: normal; }
+  .line-footer .checkbox {
+    margin-bottom: 2rem; }
+    .line-footer .checkbox span.control-label--required {
+      font-weight: normal;
+      font-size: 12px; }
+  .line-footer .btn-primary {
+    border: 3px solid #13a3df;
+    background-color: #242020; }
+    .line-footer .btn-primary:hover {
+      background-color: #13a3df; }
+  .line-footer p {
+    color: #ffffff;
+    margin: 0; }
+    .line-footer p a span {
+      color: #fc9f32; }
+      .line-footer p a span:hover {
+        color: #13a3df; }
+  .line-footer p.orange {
+    margin: 1.5rem 0;
+    color: #fc9f32; }
+  .line-footer h1,
+  .line-footer h2 {
+    color: #13a3df;
+    font-size: 1.6rem;
+    line-height: normal;
+    margin-bottom: 0; }
+  .line-footer h4 {
+    color: #ffffff; }
+    @media (max-width: 767px) {
+      .line-footer h4 {
+        margin: 1.6rem 0 0 0; } }
+  @media (max-width: 767px) {
+    .line-footer img {
+      margin: 0 0 1.6rem 0; } }
+
+.page-panier .mod-article__content p a::before {
+  content: ' + ';
+  display: inline; }
+
+.form-withProgress__wrapper .input-checkbox.col-md-12 {
+  width: 100%; }
+
+.pageid-30387 .news-flash__item__btn-readMore {
+  display: none; }
+
+
+.btn-link.btn-add{
+padding:0;
+}
+.form-withProgress__wrapper #modal-event-add .modal-content{
+height:auto;
+    min-height: 90vh;
+}
+}
+.event-bloc-responsible-desc{display:none;}
+
+.boutique .e-date {display:none;}

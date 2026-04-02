@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'brandon_text_light';
+    src: url('BrandonText-Light.otf');
+}
+
+@font-face {
+    font-family: 'brandon_text_bold_italic';
+    src: url('BrandonText-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'brandon_text_ligh_italic';
+    src: url('BrandonText-LightItalic.otf');
+}
+
+@font-face {
+    font-family: 'brandon_text_medium_italic';
+    src: url('BrandonText-MediumItalic.otf');
+}
