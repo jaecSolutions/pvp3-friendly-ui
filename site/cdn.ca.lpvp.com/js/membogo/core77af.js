@@ -866,8 +866,11 @@ memboGo.core.URLSearchQuery = {
 memboGo.core.captcha = {
     scriptTag: null,
     init: function () {
-        const isGithubPages = /(^|\.)github\.io$/i.test(window.location.hostname);
-        if (isGithubPages) {
+        const host = window.location.hostname;
+        const isGithubPages = /(^|\.)github\.io$/i.test(host);
+        const isLocalHost = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|::1|\[::1\])$/i.test(host);
+
+        if (isGithubPages || isLocalHost) {
             return;
         }
 
