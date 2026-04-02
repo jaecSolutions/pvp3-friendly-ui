@@ -29,33 +29,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Prepare deploy artifact
-        env:
-          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           set -eu
           mkdir -p public
-          cp -R site/. public/
-
-          # On project pages, root-absolute links ("/...") must include repo prefix.
-          export PAGES_PREFIX="/${REPO_NAME}/"
-          find public -name '*.html' -print0 \
-            | xargs -0 perl -0777 -i -pe 's#(\b(?:href|src|action)=")/(?!/)#$1$ENV{PAGES_PREFIX}#g'
-
-          cat > public/index.html <<'HTML'
-          <!doctype html>
-          <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0; url=./fr/">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Redirecting...</title>
-          </head>
-          <body>
-            <p>Redirecting to <a href="./fr/">the site</a>...</p>
-          </body>
-          </html>
-          HTML
-
+          cp -R docs/. public/
           cp public/index.html public/404.html
           touch public/.nojekyll
 
