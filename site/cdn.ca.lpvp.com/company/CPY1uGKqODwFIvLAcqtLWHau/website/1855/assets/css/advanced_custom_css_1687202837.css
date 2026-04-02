@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("../../../../../../../fonts.googleapis.com/css4aa6.css?family=Fredoka+One");
-@import url("../../../../../../../fonts.googleapis.com/csseea3.css?family=Sarabun:100,200,300,400,500,600,700,800");
+/* Use absolute Google Fonts URLs so CSS works on GitHub Pages and any base path (relative ../ imports break). */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap");
 html {
   box-sizing: border-box; }
 
