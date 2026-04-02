@@ -12760,7 +12760,7 @@ table#delegate-manage-list td i.fa.fa-minus-square {
 
 /** Klaro styling **/
 @media (min-width: 1024px) {
-    #yapla-consent-box .cookie-notice:not(.cookie-modal-notice) {
+    #lpvp-consent-box .cookie-notice:not(.cookie-modal-notice) {
         bottom: 0;
         left: 0;
         max-width: 100%;
@@ -12771,95 +12771,95 @@ table#delegate-manage-list td i.fa.fa-minus-square {
 }
 
 @media (max-width: 660px) {
-    #yapla-consent-box .cookie-modal .cm-modal.cm-klaro {
+    #lpvp-consent-box .cookie-modal .cm-modal.cm-klaro {
         width: 100%;
     }
 
-    #yapla-consent-box .cookie-notice .cm-btn,
-    #yapla-consent-box .cookie-modal .cm-btn {
+    #lpvp-consent-box .cookie-notice .cm-btn,
+    #lpvp-consent-box .cookie-modal .cm-btn {
         min-width: 8em !important;
     }
 
-    #yapla-consent-box .cookie-modal .cm-modal .cm-body {
+    #lpvp-consent-box .cookie-modal .cm-modal .cm-body {
         padding: 0;
     }
 
-    #yapla-consent-box .cm-footer-buttons {
+    #lpvp-consent-box .cm-footer-buttons {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    #yapla-consent-box .cm-btn {
+    #lpvp-consent-box .cm-btn {
         margin-top: 8px;
     }
 }
 
-#yapla-consent-box {
+#lpvp-consent-box {
     font-family: "Muli", Arial, Helvetica, sans-serif;
 }
 
-#yapla-consent-box .cookie-notice,
-#yapla-consent-box .cookie-modal {
+#lpvp-consent-box .cookie-notice,
+#lpvp-consent-box .cookie-modal {
     z-index: 100000000000;
 }
 
-#yapla-consent-box .cookie-notice,
-#yapla-consent-box .cookie-modal .cm-modal.cm-klaro {
+#lpvp-consent-box .cookie-notice,
+#lpvp-consent-box .cookie-modal .cm-modal.cm-klaro {
     border-radius: 0;
     line-height: 20px;
     padding: 15px 20px;
 }
 
-#yapla-consent-box .cookie-notice .cn-body {
+#lpvp-consent-box .cookie-notice .cn-body {
     padding: 0;
 }
 
-#yapla-consent-box .consent_notice_title_title,
-#yapla-consent-box .title {
+#lpvp-consent-box .consent_notice_title_title,
+#lpvp-consent-box .title {
     font-size: 20px !important;
     font-weight: bold;
     margin: 8px 0;
 }
 
-#yapla-consent-box .cookie-notice p,
-#yapla-consent-box .cookie-modal p {
+#lpvp-consent-box .cookie-notice p,
+#lpvp-consent-box .cookie-modal p {
     font-size: 15px;
     line-height: 24px;
     margin-top: 8px;
 }
 
-#yapla-consent-box .cookie-modal .cm-header {
+#lpvp-consent-box .cookie-modal .cm-header {
     padding: 0;
     border-bottom: none;
 }
 
-#yapla-consent-box .cookie-modal .cm-list-label {
+#lpvp-consent-box .cookie-modal .cm-list-label {
     font-size: 14px;
     margin-bottom: 0;
 }
 
-#yapla-consent-box .cookie-modal .cm-list-description,
-#yapla-consent-box .cookie-modal .purposes {
+#lpvp-consent-box .cookie-modal .cm-list-description,
+#lpvp-consent-box .cookie-modal .purposes {
     font-size: 14px;
     padding: 0;
     margin: 0;
 }
 
-#yapla-consent-box .cookie-modal .cm-footer {
+#lpvp-consent-box .cookie-modal .cm-footer {
     border-top: none;
     padding: 15px 0 0 0;
 }
 
-#yapla-consent-box .cookie-notice p,
-#yapla-consent-box .cookie-notice strong,
-#yapla-consent-box .cookie-modal h1,
-#yapla-consent-box .cookie-modal p,
-#yapla-consent-box .cookie-modal span,
-#yapla-consent-box .cookie-modal strong {
+#lpvp-consent-box .cookie-notice p,
+#lpvp-consent-box .cookie-notice strong,
+#lpvp-consent-box .cookie-modal h1,
+#lpvp-consent-box .cookie-modal p,
+#lpvp-consent-box .cookie-modal span,
+#lpvp-consent-box .cookie-modal strong {
     color: #555555;
 }
 
-#yapla-consent-box .cm-btn {
+#lpvp-consent-box .cm-btn {
     font-size: 15px;
     font-weight: bold;
     height: 50px;
@@ -12867,54 +12867,54 @@ table#delegate-manage-list td i.fa.fa-minus-square {
     padding: 15px 20px;
 }
 
-#yapla-consent-box .cm-btn-success {
-    background-color: var(--yapla-consent-primary, #ff7b14);
+#lpvp-consent-box .cm-btn-success {
+    background-color: var(--lpvp-consent-primary, #ff7b14);
 }
 
-#yapla-consent-box .cm-btn-success:hover {
-    background-color: var(--yapla-consent-primary-alt, var(--yapla-consent-primary, #ff7b14));
+#lpvp-consent-box .cm-btn-success:hover {
+    background-color: var(--lpvp-consent-primary-alt, var(--lpvp-consent-primary, #ff7b14));
 }
 
-#yapla-consent-box .cm-btn-danger {
-    background-color: var(--yapla-consent-secondary, #555555);
+#lpvp-consent-box .cm-btn-danger {
+    background-color: var(--lpvp-consent-secondary, #555555);
 }
 
-#yapla-consent-box .cm-btn-danger:hover {
-    background-color: var(--yapla-consent-secondary-alt, var(--yapla-consent-secondary, #ff7b14));
+#lpvp-consent-box .cm-btn-danger:hover {
+    background-color: var(--lpvp-consent-secondary-alt, var(--lpvp-consent-secondary, #ff7b14));
 }
 
-#yapla-consent-box .cookie-modal .cm-btn-accept {
+#lpvp-consent-box .cookie-modal .cm-btn-accept {
     background-color: white;
-    border: 1px solid var(--yapla-consent-primary, #ff7b14);
-    color: var(--yapla-consent-primary, #ff7b14);
+    border: 1px solid var(--lpvp-consent-primary, #ff7b14);
+    color: var(--lpvp-consent-primary, #ff7b14);
 }
 
-#yapla-consent-box .cookie-modal .cm-btn-accept:hover {
+#lpvp-consent-box .cookie-modal .cm-btn-accept:hover {
     background-color: white;
     text-decoration: underline;
 }
 
-#yapla-consent-box .cookie-notice a,
-#yapla-consent-box .cookie-modal a {
-    color: var(--yapla-consent-primary, #ff7b14);
+#lpvp-consent-box .cookie-notice a,
+#lpvp-consent-box .cookie-modal a {
+    color: var(--lpvp-consent-primary, #ff7b14);
     font-size: 15px;
     font-weight: bold;
 }
 
-#yapla-consent-box .cookie-modal .cm-toggle-all {
+#lpvp-consent-box .cookie-modal .cm-toggle-all {
     display: none;
 }
 
-#yapla-consent-box .cookie-modal .cm-list-input:checked + .cm-list-label .slider {
-    background-color: var(--yapla-consent-primary, #ff7b14);
+#lpvp-consent-box .cookie-modal .cm-list-input:checked + .cm-list-label .slider {
+    background-color: var(--lpvp-consent-primary, #ff7b14);
 }
 
-#yapla-consent-box .cookie-modal .cm-list-label .slider {
+#lpvp-consent-box .cookie-modal .cm-list-label .slider {
     background-color: #eeeeee;
 }
 
-#yapla-consent-box .cookie-modal .cm-list-input:checked + .cm-list-label .slider {
-    background-color: var(--yapla-consent-primary, #ff7b14);
+#lpvp-consent-box .cookie-modal .cm-list-input:checked + .cm-list-label .slider {
+    background-color: var(--lpvp-consent-primary, #ff7b14);
 }
 
 /** End Klaro styling **/
@@ -12987,17 +12987,17 @@ table#delegate-manage-list td i.fa.fa-minus-square {
     flex-wrap: wrap;
 }
 
-.yapla-datepicker.ui-datepicker {
+.lpvp-datepicker.ui-datepicker {
     width: 22em;
 }
 
-.yapla-datepicker.ui-datepicker .ui-datepicker-prev,
-.yapla-datepicker.ui-datepicker .ui-datepicker-next {
+.lpvp-datepicker.ui-datepicker .ui-datepicker-prev,
+.lpvp-datepicker.ui-datepicker .ui-datepicker-next {
     top: 1rem;
 }
 
-.yapla-datepicker.ui-datepicker select.ui-datepicker-month,
-.yapla-datepicker.ui-datepicker select.ui-datepicker-year {
+.lpvp-datepicker.ui-datepicker select.ui-datepicker-month,
+.lpvp-datepicker.ui-datepicker select.ui-datepicker-year {
     padding: 4px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -13009,11 +13009,11 @@ table#delegate-manage-list td i.fa.fa-minus-square {
     border-radius: 0.1rem;
 }
 
-.yapla-datepicker.ui-datepicker select.ui-datepicker-month {
+.lpvp-datepicker.ui-datepicker select.ui-datepicker-month {
     width: 63%;
 }
 
-.yapla-datepicker.ui-datepicker select.ui-datepicker-year {
+.lpvp-datepicker.ui-datepicker select.ui-datepicker-year {
     width: 35%;
 }
 

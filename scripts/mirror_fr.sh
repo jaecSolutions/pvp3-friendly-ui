@@ -24,7 +24,7 @@ httrack "$TARGET_URL" \
   "+https://www.lespetitesvoixduplateau.com/js/*" \
   "+https://www.lespetitesvoixduplateau.com/files/*" \
   "+https://www.lespetitesvoixduplateau.com/images/*" \
-  "+https://cdn.ca.yapla.com/*" \
+  "+https://cdn.ca.lpvp.com/*" \
   "+https://fonts.googleapis.com/*" \
   "+https://fonts.gstatic.com/*" \
   "+https://kit.fontawesome.com/*" \

@@ -14,19 +14,19 @@ memboGo.Web.Consent = {
 
     init: function (enable, translate, lang) {
         var self = this;
-        this.prepareYaplaConsent(translate, lang);
+        this.prepareLPVPConsent(translate, lang);
         if (enable) {
             var s = document.createElement('script');
             s.src = 'https://cdn.kiprotect.com/klaro/v0.7.18/klaro.js';
             s.defer = true;
-            s.setAttribute('data-klaro-config', 'yaplaConsent');
+            s.setAttribute('data-klaro-config', 'lpvpConsent');
             s.addEventListener('load', () => {
                 window.dispatchEvent(new Event('klaroLoaded'));
             });
             document.head.appendChild(s);
         } else {
             self.rgpd();
-            $.map(window.yaplaConsent.services, function (item) {
+            $.map(window.lpvpConsent.services, function (item) {
                 item.callback(true, item);
             });
         }
@@ -128,15 +128,15 @@ memboGo.Web.Consent = {
     },
 
     gtmTrack: function (name) {
-        memboGo.core.trackEvent('Yapla-' + name + '-Accepted');
+        memboGo.core.trackEvent('LPVP-' + name + '-Accepted');
     },
 
-    prepareYaplaConsent: function (translate, lang) {
-        window.yaplaConsent = {
+    prepareLPVPConsent: function (translate, lang) {
+        window.lpvpConsent = {
             lang: lang,
             translations: {},
             version: 1,
-            elementID: 'yapla-consent-box',
+            elementID: 'lpvp-consent-box',
             styling: {
                 theme: ['light', 'top', 'wide'],
             },
@@ -145,7 +145,7 @@ memboGo.Web.Consent = {
             embedded: false,
             groupByPurpose: false,
             storageMethod: 'cookie',
-            cookieName: 'yapla-consent',
+            cookieName: 'lpvp-consent',
             cookieExpiresAfterDays: 365,
             default: false,
             mustConsent: false,
@@ -154,7 +154,7 @@ memboGo.Web.Consent = {
             hideLearnMore: false,
             noticeAsModal: false,
             disablePoweredBy: true,
-            additionalClass: 'yapla-consent',
+            additionalClass: 'lpvp-consent',
             show: false,
             services: [
                 {
@@ -262,7 +262,7 @@ memboGo.Web.Consent = {
                 }
             ]
         };
-        window.yaplaConsent.translations[lang] = translate;
+        window.lpvpConsent.translations[lang] = translate;
     },
     /* Note: We have to clear cookies for all domain variations which is something currently not supported by klaro.
              See https://github.com/kiprotect/klaro/issues/51
