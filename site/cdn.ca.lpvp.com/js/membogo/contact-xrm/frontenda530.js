@@ -55,7 +55,7 @@ memboGo.ContactXRM = {
 					$(form).closest('.contactxrm-container').find('div.alert-container').html(error.html());
 				}
 				
-				if ($(form).find('.g-recaptcha').length) {
+				if ($(form).find('.g-recaptcha').length && window.grecaptcha && typeof grecaptcha.reset === 'function') {
 					grecaptcha.reset();
 				}
 				HPJForm.afterLoad();
