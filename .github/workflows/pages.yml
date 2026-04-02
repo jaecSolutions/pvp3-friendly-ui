@@ -39,7 +39,7 @@ jobs:
           # On project pages, root-absolute links ("/...") must include repo prefix.
           export PAGES_PREFIX="/${REPO_NAME}/site/"
           find public/site -name '*.html' -print0 \
-            | xargs -0 perl -0777 -i -pe 's#(\b(?:href|src|action)="/)/(?!/)#$1$ENV{PAGES_PREFIX}#g'
+            | xargs -0 perl -0777 -i -pe 's#(\b(?:href|src|action)=")/(?!/)#$1$ENV{PAGES_PREFIX}#g'
 
           cat > public/index.html <<'HTML'
           <!doctype html>
