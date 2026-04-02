@@ -1530,22 +1530,6 @@ p {
     max-width: 1160px;
     gap: 1rem;
   }
-
-  /* Move choir menu cards to the top of the picture block (desktop) */
-  .page-accueil .line-carres {
-    margin-top: -620px;
-    background: transparent;
-    position: relative;
-    z-index: 9;
-  }
-
-  .page-accueil .line-carres .carres-couleurs {
-    margin: 0 auto !important;
-  }
-
-  .page-accueil .line-carres .inscription-carre {
-    margin-top: 1.5rem !important;
-  }
 }
 
 .line-nouvelle .container {
