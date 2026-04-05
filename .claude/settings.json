@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/johnespinoza/Documents/pvp3 add docs/assets/images/team-*.jpg docs/assets/images/team-*.png docs/equipe.html)",
+      "Bash(git -C /Users/johnespinoza/Documents/pvp3 commit -m ':*)"
+    ]
+  }
+}
