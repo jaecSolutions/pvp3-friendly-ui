@@ -32,7 +32,7 @@ jobs:
         run: |
           set -eu
           mkdir -p public
-          cp -R docs/. public/
+          cp -R site/. public/
           cp public/index.html public/404.html
           touch public/.nojekyll
 
